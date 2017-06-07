@@ -7,7 +7,7 @@ git_local_remote() {
   declare desc="git pre-pull plugin trigger"
   local trigger="git_pre_pull"
   local APP="$1";
-  local SOURCE_APP="$(config_get "$APP" SOURCE_APP)"
+  local SOURCE_APP="${2:-$(config_get "$APP" SOURCE_APP)}"
   local remote_name="source_app_$SOURCE_APP"
 
   echo "INSIDE!!!!!!!!!!!!!! $APP $SOURCE_APP $remote_name"
