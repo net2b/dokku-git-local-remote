@@ -1,4 +1,4 @@
 [plugin]
-description = "dokku core git plugin"
-version = "0.9.4"
+description = "dokku local remote"
+version = "0.1.0"
 [plugin.config]
